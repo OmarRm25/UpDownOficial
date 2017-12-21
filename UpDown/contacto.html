@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/materialize.css">	
+	 <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+<body>
+
+	<nav class="nav-wrapper card-panel blue accent-2 left-align panel2">
+	    <div class="panel">
+
+	      <a href="#" data-activates="slide-out" class="brand-logo"><i class="material-icons">&#xE5D2;</i>UpDown</a>
+	      <ul class="right">
+	        <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+	        <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+	      </ul>
+	      <ul id="slide-out" class="side-nav">
+          <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="images/office.jpg">
+            </div>
+            <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+            <a href="#!name"><span class="black-text name">John Doe</span></a>
+            <a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
+          </div></li>
+          <li><a href="Contacto.html">Contactanos</a></li>
+          <li><a href="#!">Acerca de UPTODOWN</a></li>
+          <li><a href="#!">Guia de usuario</a></li>
+          <li><a href="#!">Foro</a></li>
+          <li><a href="#!">Conocoe mas sobre el tema</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="#!">Ajustes</a></li>
+        </ul>
+	    </div>
+	</nav>
+    
+    <section class="container">
+		<div class="row">
+		<h3 class="center-align">CONTACTANOS</h3>
+			<article class="col s6 ">
+				<form method="POST" action="formulario-contacto.php">
+					<div class="input-field">
+						<i class="material-icons prefix">perm_identity</i>
+						<label for="nombre">Nombre</label>
+						<input type="text" name="nombre" required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">person_pin</i>
+						<label for="apellido">Apellido</label>
+						<input type="text" name="apellido" required>
+					</div>
+					
+					<div class="input-field">
+						<i class="material-icons prefix">email</i>
+						<label for="email">Email</label>
+						<input type="email" name="email" required>
+					</div>
+
+					<div class="input-field">
+						<i class="material-icons prefix">mode_edit</i>
+						<label for="mensaje">Mensaje</label>
+						<textarea name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+					</div>
+					
+					<p class="center-align">
+						<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+					</p>
+
+				</form>
+
+			</article>
+		
+		
+			<article class="col s6 right-aling">
+			<br><br><iframe class="col s12 m6"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15046.141530706998!2d-99.045875!3d19.4755888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x501a154bf16c02f1!2sFacultad+de+Estudios+Superiores+Arag%C3%B3n+UNAM!5e0!3m2!1ses-419!2smx!4v1503202727921" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</article>
+			<br><br><br><br><br><br><br><br><br><br>
+			<p class="center-aling">
+						<button class="btn-floating btn-small waves-effect waves-light white"><img src="img/f.png"  ></button>
+						<button class="btn-floating waves-effect waves-light white"><img src="img/t.png" ></button>
+						<button class="btn-floating waves-effect waves-light white"><img src="img/g.png" ></button>
+			</p>
+		</div>
+	</section>	
+    	
+    
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+
+	<script type="text/javascript">$(".brand-logo").sideNav();</script>
+</body>
+</html>
