@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Audio multiple</title>
+<style type="text/css">
+/*<![CDATA[*/
+button{
+box-shadow: 1px 1px 0px #383838;
+margin: 10px;
+}
+button:hover{
+background: lime;
+box-shadow: 1px 1px 0px #000;
+}
+/*]]>*/
+</style>
+<script type="text/javascript">
+//<![CDATA[
+var audios = new Array();
+function rep(elaudio){
+
+audios=document.getElementsByTagName('audio');
+var i;
+for (i=0; i<audios.length; i++) {
+if (audios[i].id==elaudio){
+audios[i].load();
+audios[i].play();
+}else{
+audios[i].pause();
+}
+}
+
+}
+//]]>
+</script>
+</head>
+<body>
+<audio preload="auto" id="sonido1">
+<source src="win.mp3" type="audio/mp3"/>
+<source src="win.ogg" type="audio/ogg"/>
+</audio>
+<audio preload="auto" id="sonido2">
+<source src="win.mp3" type="audio/mp3" />
+<source src="win.ogg" type="audio/ogg" />
+</audio>
+<p>
+<button onclick="rep('sonido1');">Reproducir 1</button>
+<button onclick="rep('sonido2');">Reproducir 2</button>
+</body>
+</html>
